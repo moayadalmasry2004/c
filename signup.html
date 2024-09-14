@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+
+        body {
+            text-align: center;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1, #fad0c4, #ff9a9e); 
+            margin: 0;
+            padding: 2px;
+            background-repeat: repeat;
+        }
+
+        form {
+            display: inline-block;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 50px;
+            width: 300px;
+        }
+
+        fieldset {
+            border:2px;
+        }
+
+        legend {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+         
+        }
+
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+       
+        h1 a {
+            text-decoration: none;
+            color: #fbff00;
+            margin:  15px;
+        }
+
+  
+    </style>
+</head>
+<body>
+    <form method="post">
+        <fieldset>
+            <legend>Sign Up</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required>
+            
+            <label for="password">Create Password:</label>
+            <input type="password" id="password" name="password" minlength="8" required>
+            
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" minlength="8" required>
+            
+            <input type="submit" value="Sign Up">
+        </fieldset>
+    </form>
+
+    <h1>
+        <a href="index.html">Home page</a> | 
+        <a href="login.html">Login</a> | 
+        <a href="profile.html">Profile page</a>
+    </h1>
+</body>
+</html>

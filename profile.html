@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1, #fad0c4, #ff9a9e);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        legend {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+
+        h1,a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        h1 a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <fieldset>
+            <legend><h1>Information</h1></legend>
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" maxlength="30" placeholder="First Name" required></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" maxlength="30" placeholder="Last Name" required></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td><input type="date" required></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" placeholder="example@gmail.com" required></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <select required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td>
+                        <select required>
+                            <option value="palestine">Palestine</option>
+                            <option value="canada">Canada</option>
+                            <option value="jordan">Jordan</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <label for="additional-info"><p>Additional:</p></label>
+            <textarea id="additional-info" placeholder="Additional Information"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <h1>
+        <a href="index.html">Home page</a> |
+        <a href="signup.html">Sign Up</a> |
+        <a href="login.html">Login</a>
+    </h1>
+</body>
+</html>
